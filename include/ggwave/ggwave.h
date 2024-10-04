@@ -55,6 +55,9 @@ extern "C" {
         GGWAVE_PROTOCOL_MT_NORMAL,
         GGWAVE_PROTOCOL_MT_FAST,
         GGWAVE_PROTOCOL_MT_FASTEST,
+        GGWAVE_PROTOCOL_H_NORMAL,
+        GGWAVE_PROTOCOL_H_FAST,
+        GGWAVE_PROTOCOL_H_FASTEST,
 
 #ifndef GGWAVE_CONFIG_FEW_PROTOCOLS
         GGWAVE_PROTOCOL_CUSTOM_0,
@@ -531,6 +534,9 @@ public:
                 protocols.data[GGWAVE_PROTOCOL_MT_NORMAL]          = { GGWAVE_PSTR("[MT] Normal"),  24,  9, 1, 2, true, };
                 protocols.data[GGWAVE_PROTOCOL_MT_FAST]            = { GGWAVE_PSTR("[MT] Fast"),    24,  6, 1, 2, true, };
                 protocols.data[GGWAVE_PROTOCOL_MT_FASTEST]         = { GGWAVE_PSTR("[MT] Fastest"), 24,  3, 1, 2, true, };
+                protocols.data[GGWAVE_PROTOCOL_H_NORMAL]          = { GGWAVE_PSTR("[H] Normal"),  7,  9, 2, 1, true, };
+                protocols.data[GGWAVE_PROTOCOL_H_FAST]            = { GGWAVE_PSTR("[H] Fast"),    7,  6, 2, 1, true, };
+                protocols.data[GGWAVE_PROTOCOL_H_FASTEST]         = { GGWAVE_PSTR("[H] Fastest"), 7,  3, 2, 1, true, };
 
 #undef GGWAVE_PSTR
                 initialized = true;
